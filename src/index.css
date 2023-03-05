@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  --black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -47,29 +42,15 @@
 }
 
 .bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
 
 .bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
+  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
 }
 
 .bg-discount-gradient {
@@ -137,4 +118,67 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+/* Styles */
+.box-width {
+  @apply xl:max-w-[1280px] w-full;
+}
+
+.heading-2 {
+  @apply font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full;
+}
+
+.paragraph {
+  @apply font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px];
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-start {
+  @apply flex items-start justify-center;
+}
+
+.padding-x {
+  @apply px-6 sm:px-16;
+}
+
+.padding-y {
+  @apply py-6 sm:py-16;
+}
+
+.padding {
+  @apply px-6 py-4 sm:px-16 sm:py-12;
+}
+
+.margin-x {
+  @apply mx-6 sm:mx-16;
+}
+
+.margin-y {
+  @apply my-6 sm:my-16;
+}
+
+/* Layout */
+
+.section {
+  @apply flex flex-col md:flex-row padding-y;
+}
+
+.section-reverse {
+  @apply flex flex-col-reverse md:flex-row padding-y;
+}
+
+.section-img-reverse {
+  @apply relative flex flex-1 mt-10 mr-0 flex-center md:mr-10 md:mt-0;
+}
+
+.section-img {
+  @apply relative flex flex-1 mt-10 ml-0 flex-center md:ml-10 md:mt-0;
+}
+
+.section-info {
+  @apply flex-col flex-1 flex-start;
 }

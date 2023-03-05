@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames'
 
 import './index.css'
-import styles from './styles'
 
 import {
   Navbar,
@@ -14,26 +13,26 @@ import {
   Testimonials,
   Clients,
   CTA,
-  Footer
+  Footer,
 } from './components'
 
 const App = () => {
   return (
-    <div className='bg-primary w-full overflow-hidden'>
-      <div className={classNames(styles.paddingX, styles.flexCenter)}>
-        <div className={classNames(styles.boxWidth)}>
+    <div className="w-full overflow-hidden bg-primary">
+      <div className="padding-x flex-center">
+        <div className="box-width">
           <Navbar />
         </div>
       </div>
 
-      <div className={classNames('bg-primary', styles.flexStart)}>
-        <div className={classNames(styles.boxWidth)}>
+      <div className="text-white bg-primary flex-start">
+        <div className="box-width">
           <Hero />
         </div>
       </div>
 
-      <div className={classNames('bg-primary', styles.paddingX, styles.flexStart)}>
-        <div className={classNames(styles.boxWidth)}>
+      <div className="bg-primary padding-x flex-start">
+        <div className="box-width">
           <Stats />
           <Business />
           <Billing />

@@ -19,13 +19,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={classNames(
-              'font-poppins',
-              'font-normal',
-              'cursor-pointer',
-              'text-white',
-              'text-[16px]'
-            )}
+            className="font-poppins font-normal cursor-pointer text-white text-[16px]"
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
@@ -49,13 +43,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={classNames(
-                    'font-poppins',
-                    'font-normal',
-                    'cursor-pointer',
-                    'text-white',
-                    'text-[16px]'
-                  )}
+                  className="font-poppins font-normal cursor-pointer text-white text-[16px]"
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
