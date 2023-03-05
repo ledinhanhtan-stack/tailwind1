@@ -1,13 +1,14 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react'
 
 interface StatsProps {
+  
 }
 
-const Stats: FunctionComponent<StatsProps> = (props) => {
-  
+const Stats: React.FC<StatsProps> = (props) => {
+
   return (
     <div></div>
   )
-};
+}
 
-export default Stats;
+export default Stats
